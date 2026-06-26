@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #222;
+  padding: 20px;
+}
+
+.page {
+  width: 100%;
+  border: 2px solid black;
+}
+
+/* ===== HEADER ===== */
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 58px;
+  border-bottom: 1px solid black;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-right: 1px solid black;
+}
+
+header div:last-child {
+  border-right: none;
+}
+
+/* ===== HERO ===== */
+
+.hero {
+  height: 200px;
+  border-bottom: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.hero p {
+  grid-column: 2;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* ===== MAIN CONTENT ===== */
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-bottom: 1px solid black;
+}
+
+.left-empty {
+  border-right: 1px solid black;
+}
+
+.right-content {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+}
+
+/* ===== TEXT BOX ===== */
+
+.text-box {
+  padding: 22px 20px;
+  border-bottom: 1px solid black;
+}
+
+.text-box p {
+  line-height: 1.35;
+  margin-bottom: 22px;
+}
+
+.text-box ul {
+  margin-left: 35px;
+  margin-bottom: 22px;
+  list-style-type: square;
+}
+
+.text-box li {
+  margin-bottom: 7px;
+}
+
+/* ===== NOTICE ===== */
+
+.notice {
+  padding: 18px 20px;
+  border-bottom: 1px solid black;
+}
+
+/* ===== FEATURES / COST ===== */
+
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid black;
+}
+
+.features {
+  padding: 22px 20px;
+  border-right: 1px solid black;
+}
+
+.features p {
+  margin-bottom: 20px;
+}
+
+.features ul {
+  margin-left: 35px;
+  list-style-type: square;
+}
+
+.features li {
+  margin-bottom: 7px;
+}
+
+.cost {
+  padding: 22px 20px;
+}
+
+.cost p:first-child {
+  margin-bottom: 45px;
+}
+
+.cost p:last-child {
+  text-align: center;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+  text-align: center;
+  padding: 22px;
+}
+
+/* ===== BOTTOM EMPTY SPACE ===== */
+
+.bottom-space {
+  height: 60px;
+}
